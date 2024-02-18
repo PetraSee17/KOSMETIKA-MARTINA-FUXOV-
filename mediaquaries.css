@@ -1,0 +1,191 @@
+/* HEADER + NAVIGATION */
+@media (max-width: 520px) {
+  .contacts {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+    position: relative;
+  }
+
+  .navigation {
+    display: none;
+    position: absolute;
+    top: 50px;
+    width: 100%;
+    z-index: 2100;
+  }
+
+  .navigation ul {
+    display: block;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .menu_icons {
+    display: block;
+    font-size: 30px;
+    position: absolute;
+    top: 20%;
+    right: 5%;
+  }
+}
+
+/* MAIN SECTION  */
+@media (max-width: 576px) {
+  .mainbackground_img {
+    background-position: left;
+  }
+}
+
+/* SALON PHOTOS */
+@media (min-width: 576px) {
+  .img_container {
+    width: 80%;
+    margin: 0 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .salon_img {
+    flex-basis: calc(100% / 2 - 30px);
+    height: 200px;
+  }
+}
+
+@media (min-width: 768px) {
+  .salon_img {
+    height: 300px;
+  }
+
+  .salon_img img:hover {
+    scale: 1.3;
+    z-index: 1000;
+    transition: 0.8s;
+  }
+}
+
+@media (min-width: 1000px) {
+  .img_container {
+    flex-wrap: nowrap;
+  }
+
+  .salon_img {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+/* PRICELIST */
+@media (min-width: 900px) {
+  .service_price_container {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+  }
+  .services_price_part1 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+  }
+  .services_price_part2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+/* ALISSA BEAUTÉ */
+@media (max-width: 576px) {
+  .AlissaBeauté_images {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1100px) {
+  .AlissaBeauté_images {
+    flex-wrap: wrap;
+  }
+}
+
+/* GALLERY */
+@media (min-width: 576px) {
+  .gallery_container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+  .gallery_photo {
+    flex-basis: calc(100% / 2 - 20px / 2);
+    height: 200px;
+  }
+  .gallery_video video {
+    width: 500px;
+    height: 300px;
+  }
+}
+
+@media (min-width: 700px) {
+  .gallery_container {
+    width: 70%;
+  }
+  .gallery_photo,
+  .gallery_text {
+    flex-basis: calc(100% / 3 - 20px / 3);
+    height: 200px;
+  }
+  .gallery_photo img:hover {
+    scale: 1.3;
+    z-index: 1000;
+    transition: 0.7s;
+  }
+
+  .gallery_text {
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+  }
+  .gallery_video video {
+    width: 550px;
+    height: 320px;
+  }
+}
+
+/* REVIEWS */
+@media (max-width: 950px) {
+  .review_text_container {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .review_text {
+    text-align: center;
+  }
+}
+
+/* CONTACTS */
+@media (min-width: 900px) {
+  .footer_contacts {
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .footer_contacts {
+    justify-content: space-evenly;
+  }
+}

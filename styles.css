@@ -1,0 +1,443 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+:root {
+  --black-color: #000;
+  --backgroundcolor: #fff0f5;
+  --text-color: #fff;
+  --backgroundcolor-grey: #424447;
+  --Misty-Rose-color: #ffe4e1;
+  --Salmon-color: #fdbcb4;
+}
+
+/* HEADLINES */
+h1 {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 36px;
+}
+
+h2 {
+  padding: 40px;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.pricelist_h2,
+.Alissa_Beauté_h2 {
+  transition: 0.8s;
+}
+
+.pricelist_h2::after,
+.review_h2::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 30%;
+  background-color: var(--Salmon-color);
+  margin: 15px auto;
+  rotate: -2deg;
+}
+
+.Alissa_Beauté_h2::before,
+.Alissa_Beauté_h2::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 28%;
+  background-color: var(--black-color);
+  margin: 5px auto;
+}
+
+h3 {
+  padding: 30px;
+  text-align: center;
+}
+
+/* HEADER */
+.header {
+  border-bottom: 4px solid var(--Salmon-color);
+  display: flex;
+  align-items: center;
+  height: 55px;
+  color: var(--Salmon-color);
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-grow: 1;
+  padding-left: 10px;
+}
+
+.contact_phone img {
+  width: 15px;
+  height: 15px;
+}
+
+.contact_phone,
+.contact_IG {
+  font-weight: bold;
+}
+.contact_IG a,
+.contact_phone a {
+  text-decoration: none;
+  color: var(--Salmon-color);
+  transition: 0.5s;
+}
+.contact_IG a:hover {
+  font-size: 18px;
+}
+
+/* NAVIGATION */
+.navigation {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.navigation li {
+  padding: 10px 0 10px 0;
+  transition: 0.5s;
+}
+
+.menu_icons {
+  display: none;
+}
+
+.navigation ul {
+  display: flex;
+  gap: 15px;
+  list-style-type: none;
+  font-size: 18px;
+  font-weight: bold;
+  padding-right: 20px;
+  text-align: left;
+}
+
+.navigation li:hover {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* MAIN */
+.mainbackground_img {
+  background-image: url(images/20240128_133936.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  border-bottom: 4px solid var(--Salmon-color);
+  opacity: 0.9;
+}
+
+.headline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_logo {
+  width: 350px;
+  height: 350px;
+  z-index: 2000;
+}
+
+.main_logo img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* ABOUT ME */
+.about_me_section {
+  background-color: var(--Misty-Rose-color);
+}
+
+.about_me {
+  height: 350px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about_me p {
+  line-height: 2;
+  width: 80%;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* SALON PHOTOS */
+.salon_images {
+  padding: 100px 0 100px 0;
+}
+
+.img_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.salon_img {
+  flex-grow: 1;
+  width: 70%;
+  height: 350px;
+  margin: 0 auto;
+}
+
+.salon_img img {
+  object-fit: fill;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+/* BTN BACK UP */
+.btn_backup {
+  display: inline-block;
+  position: fixed;
+  top: 500px;
+  right: 20px;
+  border: 2px solid var(--black-color);
+  border-radius: 5px;
+  background-color: var(--Misty-Rose-color);
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* PRICELIST */
+.services_price_part1,
+.services_price_part2 {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.services_price_part2 {
+  margin-bottom: 50px;
+}
+
+.services_price table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-spacing: 0;
+  margin-bottom: 50px;
+}
+
+.table_pricelist1 > tbody > tr > td,
+.table_pricelist2 > tbody > tr > td {
+  border: 1.5px solid var(--Salmon-color);
+  padding: 15px 10px 30px 10px;
+  border-radius: 2px;
+  background-color: var(--Misty-Rose-color);
+}
+
+.table_pricelist1,
+.table_pricelist2 {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.first_td {
+  text-align: left;
+  width: 400px;
+}
+
+.second_td {
+  text-align: center;
+  width: 150px;
+}
+
+/* ALISSA BEAUTÉ */
+.AlissaBeauté_container {
+  background-color: var(--Misty-Rose-color);
+}
+
+.AlissaBeauté_images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 80px;
+}
+
+.logo_alissa_beaute,
+.AlissaBeauté_image {
+  width: 250px;
+  height: 250px;
+}
+
+.logo_alissa_beaute img,
+.AlissaBeauté_image img {
+  object-fit: fill;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.about_cosmetics {
+  text-align: center;
+  padding: 40px 0 50px 0;
+  font-size: 18px;
+}
+
+.about_cosmetics p {
+  width: 60%;
+  margin: 0 auto;
+}
+
+/* GALLERY */
+.gallery_container {
+  width: 70%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.gallery_photo {
+  width: 100%;
+  height: 400px;
+}
+
+.gallery_photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border-radius: 20px;
+}
+
+.gallery_text {
+  display: none;
+}
+
+.gallery_video {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 70px;
+}
+
+.gallery_video video {
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* REVIEW CONTAINER */
+.review_container {
+  padding-bottom: 80px;
+}
+
+.review_text_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 150px;
+  padding: 0 50px 50px 50px;
+}
+
+.review_text {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.review {
+  background-color: var(--Misty-Rose-color);
+}
+
+.reviewer {
+  padding-top: 20px;
+}
+
+/* FORM */
+.form form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 80px;
+}
+
+.form input {
+  height: 30px;
+  width: 300px;
+  border-radius: 5px;
+  border: 1.5px solid var(--Salmon-color);
+  padding-left: 10px;
+}
+
+.form input:hover {
+  background-color: var(--Salmon-color);
+}
+
+.form .textarea {
+  padding: 10px 0 100px 10px;
+}
+
+.submit_btn {
+  background-color: var(--Salmon-color);
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* FOOTER */
+.contacts_section {
+  background-color: var(--backgroundcolor-grey);
+  color: var(--text-color);
+  font-size: 18px;
+}
+
+.footer_contacts {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 60px;
+  gap: 30px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.open_hours {
+  text-align: center;
+}
+
+.email a,
+.phone a,
+.links a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.email a:hover,
+.phone a:hover,
+.links a:hover {
+  color: var(--Salmon-color);
+}
+
+.rights {
+  text-align: center;
+  padding: 18px 0 18px 0;
+  font-size: 14px;
+}
